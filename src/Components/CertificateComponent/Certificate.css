@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #d4af37; /* Gold color */
+    border-radius: 15px;
+    box-shadow:
+      0 0 0 2px #fff, /* Very thin white line */
+      0 0 0 7px #f1c27d; /* Skin-tone color */
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em; /* Increased base font size */
+}
+
+.certificate:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 2px solid #d4af37; /* A thin gold border for a detailed effect */
+    border-radius: 15px; /* Rounded corners to match the outer border */
+    pointer-events: none; 
+}
+
+.certificate-body {
+  text-align: center; /* Center-align the body content */
+}
+
+.certificate-body p {
+  margin: 5px 0;
+}
+
+.certificate-footer{
+  text-align: center;
+  margin-top: 1px;
+}
+
+.certificate-footer p {
+  margin: 5px 0;
+}
+
+.certificate-header h1 {
+    font-size: 3.0em; /* Unchanged, as per your request */
+    font-family: 'Alex Brush', cursive;
+    margin: 50px 0 5px 0;
+}
+
+.certificate-body h2 {
+    margin: 1px 0;
+    font-size: 2.5em; /* Unchanged, as per your request */
+    font-family: 'Alex Brush', cursive;
+}
+
+.certificate-body h3 {
+    margin: 1px 0;
+    font-size: 2.15em; /* Unchanged, as per your request */
+    font-family: 'Alex Brush', cursive;
+}
+
+.seal {
+    height: 100px; /* Adjust as necessary */
+    margin: 1px;
+}

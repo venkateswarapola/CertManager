@@ -1,0 +1,62 @@
+.certificate-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* Google's font */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #606770; /* Subtle text color */
+  }
+  
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e7e7e7; /* Light border */
+    border-radius: 20px; /* Rounded corners */
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group select:focus {
+    border-color: #1877f2; /* Facebook blue for focus */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+  }
+  
+  .form-date-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-date-group .form-group {
+    flex-basis: 30%;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1da1f2; /* Twitter blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0d8ae2; /* Darker blue on hover */
+  }
+  
