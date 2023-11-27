@@ -1,6 +1,6 @@
 # Getting Started with CertManager
 
-This project is Ethereum based Certificate Generation and Validation System.
+CertManager is Ethereum based Certificate Generation and Validation System.
 
 ## Technology Stack
 
