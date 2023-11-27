@@ -4,7 +4,7 @@ CertManager is Ethereum based Certificate Generation and Validation System.
 
 ### Application Demo:
 
-Hosted on YouTube: [https://youtu.be/c8tAJmW7pgA]
+Hosted on YouTube: https://youtu.be/c8tAJmW7pgA
 
 ## Technology Stack
 
