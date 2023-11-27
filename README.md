@@ -2,6 +2,10 @@
 
 CertManager is Ethereum based Certificate Generation and Validation System.
 
+This innovative application harnesses the capabilities of Ethereum blockchain to ensure secure certificate generation and validation. Utilizing a combination of React for frontend development, MetaMask to facilitate Ethereum transactions, and web3.js for bridging MetaMask and the frontend, this project seeks to transform the landscape of digital certificate management.
+
+By integrating these technologies seamlessly, the application aims to provide a novel approach to handling digital certificates, promising increased security and efficiency in the process of generation and validation.
+
 ### Application Demo:
 
 Hosted on YouTube: https://youtu.be/c8tAJmW7pgA
