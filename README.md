@@ -2,7 +2,7 @@
 
 This project is Ethereum based Certificate Generation and Validation System.
 
-# Technology Stack
+## Technology Stack
 
 1. React for Application Frontend
 2. Web3.JS Library for DApp and Contract interaction
