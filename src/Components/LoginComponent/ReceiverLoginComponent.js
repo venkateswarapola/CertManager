@@ -7,14 +7,17 @@ const ReceiverLoginComponent = () => {
 
   const navigate = useNavigate();
 
+  //Handle Email input
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
+  //Handle password input
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
+  //Handle login submission and navigate to appropriate page
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate('/receiver');

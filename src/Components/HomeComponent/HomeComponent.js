@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const HomeComponent = () => {
   const navigate = useNavigate();
+  //HomeComponent Styles
   const commonStyle = {
     flex: 1,
     display: 'flex',
@@ -68,6 +69,7 @@ const HomeComponent = () => {
     fontSize: '20px',
   };
 
+  //Handle verfication button navigation
   const handleVerifyCertificate = () =>{
     navigate('/verify');
   }

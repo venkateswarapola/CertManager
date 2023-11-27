@@ -10,6 +10,7 @@ const ReceiverComponent = () => {
   const [contract, setContract] = useState(null);
   const [address, setAddress] = useState(null);
 
+  //Connect to Smart contract on browser load.
   useEffect(() => {
     async function initWeb3() {
       if (window.ethereum) {
@@ -38,9 +39,9 @@ const ReceiverComponent = () => {
       }
     }
     initWeb3()
-    //handleGetOwnCertificate()
   }, []);
 
+  //Update data on reload
   useEffect(()=>{
     const handleGetOwnCertificate = async () => {
         console.log(contract)
@@ -64,9 +65,6 @@ const ReceiverComponent = () => {
     <div>
     {!certificateData ? (
         <p>There are no Certificates linked to this account</p>
-        // <div className="receiver-container">
-        // <button className={`animated-button ${isClicked ? 'clicked' : ''}`} onClick={handleGetOwnCertificate}>Get Certificate</button>
-        // </div>
       ) : (
         <CardComponent {...certificateData} address={address}/>
       )}

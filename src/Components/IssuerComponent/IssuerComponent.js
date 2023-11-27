@@ -9,9 +9,9 @@ function IssuerComponent() {
   const [certificateData, setCertificateData] = useState(null);
   const [web3, setWeb3] = useState(null);
   const [contract, setContract] = useState(null);
-  //const contractAddress = '0x1df16f506d8182072608e2dff976b34229934ed7'; // Replace with your deployed contract address
 
 
+  //Connect to Smart contract on browser load.
   useEffect(() => {
     async function initWeb3() {
       if (window.ethereum) {
@@ -43,10 +43,10 @@ function IssuerComponent() {
     initWeb3();
   }, []);
 
+  //Call to the Smart Contact to handle store certificate from form data.
   const handleStoreCertificate = async (address,cert) => {
     if (contract && cert !== '') {
       try {
-        //0x969849B4d0B48A99B8D17245164Dd33F8dc9c294
         await contract.methods.storeCertificate(address,cert).send({ from: web3.eth.defaultAccount });
         alert('Certificate stored successfully!');
       } catch (error) {
@@ -55,6 +55,8 @@ function IssuerComponent() {
     }
   };
 
+  
+  //Handle submit certificate Data.
   const handleCertificateSubmit = (data) => {
     setCertificateData(data);
     const id = data.id;

@@ -12,6 +12,7 @@ const CardComponent = ({name, id, day, month, year, reason, address}) => {
     reason:reason
   }
   const date = day+'-'+month+'-'+year;
+  //Card Componen Styles
   const cardStyle = {
     backgroundColor: '#fff',
     padding: '1.5rem',
@@ -45,6 +46,7 @@ const CardComponent = ({name, id, day, month, year, reason, address}) => {
     color: 'green'
   };
 
+  //Certificate Handle Toggle
   const handleGetCertificate =()=>{
     setCert(true);
   }

@@ -10,6 +10,7 @@ const VerificationComponent = () => {
   const [contract, setContract] = useState(null);
   const [inputWarning, setInputWarning] = useState('');
 
+  //Connect to Smart contract on browser load.
   useEffect(() => {
     async function initWeb3() {
       if (window.ethereum) {
@@ -41,6 +42,7 @@ const VerificationComponent = () => {
     initWeb3();
   }, []);
 
+  //Handle certificate address input and fetch certificate validation using address
   const handleGetCertificate = async () => {
     if (!addressInput) {
       setInputWarning('Please enter an address');
